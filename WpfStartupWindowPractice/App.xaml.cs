@@ -16,7 +16,7 @@ namespace WpfStartupWindowPractice
         private void App_Startup(object sender, StartupEventArgs e)
         {
             MainWindow wnd = new();
-            wnd.SubText.Text = "Some text";
+            wnd.SubText.Text = Current.FindResource("AppString").ToString();
             wnd.Show();
         }
     }
